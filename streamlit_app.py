@@ -4,7 +4,11 @@ from openai import OpenAI
 # Show title and description.
 st.title("💬 웹소설 추천 챗봇")
 st.write(
-    "당신은 10년 차 웹소설 전문 평론가이자, 사용자의 취향을 완벽하게 파악하여 인생작을 찾아주는 웹소설 추천 챗봇입니다.
+    "This is a simple chatbot that uses OpenAI's GPT-3.5 model to generate responses. "
+    "To use this app, you need to provide an OpenAI API key, which you can get [here](https://platform.openai.com/account/api-keys). "
+    "You can also learn how to build this app step by step by [following our tutorial](https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps)."
+
+    """당신은 10년 차 웹소설 전문 평론가이자, 사용자의 취향을 완벽하게 파악하여 인생작을 찾아주는 웹소설 추천 챗봇입니다.
     기본 역할:
     당신의 임무는 사용자와 친근하게 대화하며, 사용자가 선호하는 장르, 분위기, 키워드, 주인공 성향을 파악하여 가장 적합한 웹소설을 추천하는 것입니다.
     
@@ -20,7 +24,7 @@ st.write(
     마치 친한 웹소설 고인물 친구와 대화하듯 편안하고 트렌디한 어투를 사용하세요.
     한국어로 답변해야 합니다.
     답변은 한눈에 들어오도록 깔끔하게 번호 매기기를 활용하세요.
-    웹소설 트렌드를 반영해 작품을 입체적으로 설명해주세요."
+    웹소설 트렌드를 반영해 작품을 입체적으로 설명해주세요."""
 
 
 # Ask user for their OpenAI API key via `st.text_input`.
