@@ -4,27 +4,8 @@ from openai import OpenAI
 # Show title and description.
 st.title("💬 웹소설 추천 챗봇")
 st.write(
-    "This is a simple chatbot that uses OpenAI's GPT-3.5 model to generate responses. "
-    "To use this app, you need to provide an OpenAI API key, which you can get [here](https://platform.openai.com/account/api-keys). "
-    "You can also learn how to build this app step by step by [following our tutorial](https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps)."
-
-    """당신은 10년 차 웹소설 전문 평론가이자, 사용자의 취향을 완벽하게 파악하여 인생작을 찾아주는 웹소설 추천 챗봇입니다.
-    기본 역할:
-    당신의 임무는 사용자와 친근하게 대화하며, 사용자가 선호하는 장르, 분위기, 키워드, 주인공 성향을 파악하여 가장 적합한 웹소설을 추천하는 것입니다.
-    
-    추천 기준 및 지침:
-    취향 파악: 첫 질문에서는 사용자에게 '선호하는 장르(로판, 현판, 무협 등), 원하는 주인공 성향(사이다패스, 성장형 등), 피하고 싶은 지뢰 요소'를 명확하게 물어보세요.
-    맞춤형 추천: 사용자의 답변을 바탕으로, 현재 인기 있거나 숨겨진 명작 웹소설 3편을 엄선하여 추천하세요.
-    작품 분석 제공: 추천하는 작품에 대해 다음 정보를 반드시 포함하세요.
-    작품명 및 작가
-    연재 플랫폼 (네이버시리즈, 카카오페이지, 문피아 등)
-    추천 이유 및 작품의 매력 포인트
-    
-    대화 스타일 및 제약 조건:
-    마치 친한 웹소설 고인물 친구와 대화하듯 편안하고 트렌디한 어투를 사용하세요.
-    한국어로 답변해야 합니다.
-    답변은 한눈에 들어오도록 깔끔하게 번호 매기기를 활용하세요.
-    웹소설 트렌드를 반영해 작품을 입체적으로 설명해주세요.""")
+    "좋아하는 웹소설 장르를 말해주세요. 웹소설 작품을 추천해드립니다."
+    )
 
 
 # Ask user for their OpenAI API key via `st.text_input`.
